@@ -28,42 +28,121 @@
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- <link rel="apple-touch-icon" href="favicon.ico" /> -->
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
     <script src="preloader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="container">
       <!-- *** ESTRUCTURA SEMÁNTICA *** -->
       <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
+      <header id="inicio">
+        <nav class="menu__principal">
+          <section class="menu__principal--logo--link">
+            <a href="#" class="nav__link inicio active">
+              <span class="nav__link letra">I</span>
+              <span class="resto">nicio</span></a
+            >
+            <a href="#inicio" class="menu__principal--logo">
+              <img
+                class="menu__principal--logo--img"
+                src="./svg/logo.svg"
+                alt=""
+              />
+            </a>
+          </section>
+          <a href="#" class="nav__link">
+            <span class="nav__link letra">S</span>
+            <span class="resto">ervicios</span>
+          </a>
+          <section class="novedades">
+            Lorem ipsum dolor sit amet consectetur. Nullam felis varius
+            ullamcorper sapien malesuada tristique mattis iaculis. Leo maecenas
+            mattis dignissim laoreet consequat arcu mi amet mauris. Nullam
+            volutpat vulputate vulputate pulvinar feugiat. A ipsum dolor sed
+            donec sodales. In odio nunc erat egestas morbi egestas. Mauris diam
+            leo.
+          </section>
+          <a href="#" class="nav__link">
+            <span class="nav__link letra">C</span>
+            <span class="resto">ontactar</span>
+          </a>
         </nav>
       </header>
-      <!-- Main (centro de la página, zona central) -->
+
       <main>
-        <!-- section y article (posibilidades dentro de main) -->
+        <!-- CAROUSEL -->
+        <section class="main__carrusel carrusel">
+          <picture>
+            <source 
+            
+            />
+            <img src="/img//desktop/imagen1.jpg" alt="" class="carrusel__img01" />
+          </picture>
+          <img
+            src="/img/desktop/imagen2.jpg"
+            alt=""
+            class="carrusel__img02"
+          /><img
+            src="/img/desktop/imagen3.jpg"
+            alt=""
+            class="carrusel__img03"
+          /><img
+            src="/img/desktop/imagen4.jpg"
+            alt=""
+            class="carrusel__img04"
+          />
+        </section>
+        <article class="main__article">
+          Lorem ipsum dolor sit amet consectetur. Sed aliquam mauris gravida
+          massa ipsum ridiculus sollicitudin ut. Malesuada eget quisque
+          fringilla at amet vitae. Quam molestie iaculis sed pharetra porttitor
+          nunc ultrices venenatis. Non est risus a magna blandit pulvinar at
+          non. Purus nunc vitae praesent nulla ullamcorper duis. Sed cursus sit
+          sed donec. Eget sit ut aliquam morbi. Suspendisse sagittis elementum
+          commodo venenatis vitae lectus nibh. Non maecenas dolor auctor id.
+          Vitae nec neque felis magna ac feugiat. At nisl tellus tortor aliquam
+          scelerisque. Metus eget risus congue convallis sit laoreet eget
+          nascetur mi. Dictum dictum scelerisque hac massa phasellus. Tempus
+          tellus mattis vitae proin sit mi. Sollicitudin parturient.
+        </article>
       </main>
       <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
+      <footer class="footer">
+        <img class="footer__logo" src="./svg/logo_white.svg" alt="" />
+        <section class="footer__links">
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Contactar</a>
+        </section>
+        <section class="footer__politicas">
+          <ul class="footer__politicas footer__list">
+            <li>Política de Privacidad</li>
+            <li>Uso de Cookies</li>
+            <li>Condiciones de Uso</li>
+            <li>Avisos Legales</li>
+            <li>Mapa del Sitio</li>
+          </ul>
+        </section>
+        <h6 class="footer copyright">&copy;Copyright</h6>
       </footer>
     </div>
-
   </body>
 </html>
